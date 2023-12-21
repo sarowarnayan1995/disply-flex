@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Common CSS */
+
+.container{
+    width: 1200px;
+    background-color: aqua;
+}
+
+.flex{
+    display: flex;
+}
+ 
+.justify-center{
+    justify-content: center;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+h1{}
+
+p{
+    font-size: 18px;
+    margin: 20px 0;
+} 
+.btn{
+    background-color: #008ffb;
+    padding: 10px 40px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover{
+    color:red
+}
+
+
+/*herobanner CSS*/
+
+.herobanner{
+}
+
+.herobannercontent{
+    flex-basis: 50%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.banner{
+    flex-basis: 50%;
+    aspect-ratio: 5/6;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.banner img{
+    height: 100%;
+    object-fit: cover;
+    
+
+}
+
+
+@mediaf(max-width:1400px){
+    .container{
+        width:1000px;
+    }
+
+    .banner img{
+        aspect-ratio: 6/5;
+    }
+}
+
+
+@mediaf(max-width:767px){
+    .container{
+        padding: 0 20px;
+    }   
+
+    .directionColumn{
+        flex-direction: colum;
+    }
+
+    .banner img{
+        aspect-ratio: 6/4s;
+    }
+}
